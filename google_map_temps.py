@@ -14,7 +14,9 @@ def dure_trajet(orig_coord='Bourdeau', dest_coord='paris'):
     '''
     # orig_coord = input("origine: ")
     # dest_coord = input("destination: ")
-    gmaps = googlemaps.Client(key='AIzaSyAW-3_Xxp6QgNvuqkkVCX4KgoD3EGiGghQ')
+    key = 'AIzaSyCG-x6BHrjM1h5vW9BRRLvayIYnHjyKvxc'
+    # gmaps = googlemaps.Client(key='AIzaSyAW-3_Xxp6QgNvuqkkVCX4KgoD3EGiGghQ')
+    gmaps = googlemaps.Client(key='AIzaSyCG-x6BHrjM1h5vW9BRRLvayIYnHjyKvxc')
     now = datetime.now()
     directions_result = gmaps.directions(orig_coord,
                                          dest_coord,
